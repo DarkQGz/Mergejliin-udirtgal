@@ -1,7 +1,8 @@
-for i in range(1, 10001, 1):
-    a = 0
-    for n in range (1, j, 1):
-        if (i%n==0):
-            a+=n
-    if(i==a):
-        print(i)
+for num in range(2, 10001):
+    a = True
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            a = False
+            break
+    if a:
+        print(num)
