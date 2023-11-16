@@ -1,10 +1,4 @@
-n = int(input())
+n=int(input())
 for a in range(2, n + 1):
-    d = 1
-    for i in range(2, int(a**0.5) + 1):
-        if a % i == 0:
-            d += i
-            if i != a // i:
-                d += a // i
-    if a == d:
-        print(a)
+    d = 1 + sum(i + a // i for i in range(2, int(a**0.5) + 1) if a % i == 0 and i != a // i)
+    if a == d: print(a)
