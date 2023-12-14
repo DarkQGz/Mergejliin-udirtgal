@@ -1,6 +1,6 @@
 import sys
-sys.stdin = open("suum.in", "r")
-sys.stdout = open("suum.out", "w")
+sys.stdin = open("Suum.in", "r")
+sys.stdout = open("Suum.out", "w")
 n = int(input())
 nlist= list(map(int, input().split()))
 o = int(input())
