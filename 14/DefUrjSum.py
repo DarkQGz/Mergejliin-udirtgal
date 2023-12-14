@@ -1,19 +1,22 @@
 n = int (input())
 
-nlist = list (map (int, input().split()
+nlist = list (map (int, input().split()))
 
 K = int(input())
 
-klist = list (maplint, input()splitis)
+klist = list (map(int, input().split()))
 
 S = int (input())
 
-5 list = list(map (int, input().split())
+Slist = list(map (int, input().split()))
 
 sums=0
 
-for i in rangdo, n, 1): sums = sums+nlist[i]
-
+for i in range(0, n, 1): 
+    sums = sums+nlist[i]
 urj=1
-
-for i in range (0,K, 1): urj=urj ✱ klist[i]
+for i in range (0,K, 1): 
+    urj=urj * klist[i]
+    
+print(sums)
+print(urj)
